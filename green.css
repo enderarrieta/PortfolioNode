@@ -1,0 +1,374 @@
+:root{
+	--mainColor:#606B56;
+	--secondaryColor:#515a48;
+
+	--borderColor:#161914;
+
+	--mainText:#fff;
+	--secondaryText:#eeeeee;
+
+	--themeDotBorder:#FFF;
+
+	--previewBg:rgb(81, 90, 72, 0.8);
+	--previewShadow:#3d4635;
+
+
+	--buttonColor:#669966;
+
+
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: 80% 0%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-wrapper {
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    display: grid;
+    grid-template-columns: 1fr 8fr 4fr;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--mainColor);
+    border-radius: 5px 5px 0 0;  
+}
+
+.profile_pic {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor)
+}
+
+#kenma {
+  display: none;
+}
+
+#navigation{
+    margin:0;
+    padding: 10px;
+    justify-self: right;
+}
+
+
+.tabs {
+    height:45px;
+    padding: 0 0 0 0;
+    overflow:visible;
+    justify-self: left;
+  }
+  .tab {
+    width:200px;
+    height:45px;
+    overflow:hidden;
+    float:left;
+    margin:0 -15px 0 0;
+  }
+  
+  
+  .tab-box {
+    height:50px;
+    background-color: var(--mainColor);
+    border-radius: 4px;
+    border:1px solid var(--borderColor);
+    margin:0 10px 0;
+    box-shadow: 0 0 2px  #fff inset;
+    color: var(--borderColor);
+    cursor: pointer;
+    
+    -webkit-transform: perspective(100px) rotateX(30deg);
+ -moz-transform: perspective(100px) rotateX(30deg);
+    
+  }
+
+  .tab-box p {
+  color: var(--buttonColor);
+  padding-left: 40px;
+  }
+  
+  .tab.active {
+    z-index:40;
+    position:relative;
+    padding-bottom:1px;
+  }
+  .tab.active .tab-box{
+    background-color: var(--secondaryColor);
+    box-shadow: 0 0 2px 0 #fff inset;
+  }
+  
+  .content {
+    z-index:1;
+    padding:100px;
+    border:1px solid #ccc;
+    background:#eee;
+    position:relative;
+    
+  }
+  
+  .clear {
+   clear:both;
+  }
+
+  .logo_wrap {
+    width: auto;
+    padding-left: 0;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    grid-row-gap: 40px;
+}
+
+.logo {
+  display: block;
+  opacity: .35;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.logo_wrap {
+    display: -ms-grid;
+    display: grid;
+    padding-top: 40px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    justify-items: start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    grid-auto-columns: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 32px;
+    grid-template-areas: ".";
+    -ms-grid-columns: auto 20px auto 20px auto;
+    grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto 32px auto 32px auto;
+    grid-template-rows: auto auto auto;
+}
+
+.u-border-top {
+  padding-top: 40px;
+  border-top: 1px solid #000;
+}
+
+.blog_sign-up_wrap {
+  display: flex;
+  padding-right: 0;
+  padding-bottom: 110;
+  padding-left: 0;
+}
+
+.sign-up_container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+}
+
+.blog_sign-up_grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  color: #fff;
+}
+
+.blog_sign-up_cell {
+  padding-right: 75px;
+  height: 100%;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+}
+
+.nope {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.left-resume {
+padding-right: 40px;
+}
+
+.post-preview {
+  background-color: #3d3d3f;
+  padding: 15px;
+  position: relative;
+}
+
+.post-title {
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.emoji {
+  position: absolute;
+  left: 90%;
+}
+
+.resume-button {
+  margin-top: 80px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom:10px;
+  padding-right: 20px;
+  padding-left: 20px; 
+	color: #fff;
+	background-color: var(--buttonColor);
+	border:none;
+}
+
+.resume-button:hover {
+  background-color: var(--buttonHover);
+}
+
+.blog_logos-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.contact-form{
+	display: block;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 1px solid var(--borderColor);
+	padding: 15px;
+	border-radius: 5px;
+	background-color: var(--mainColor);
+	margin-bottom: 50px;
+
+}
+
+.primary-btn{
+	width: 100%;
+  margin-top: 40px;
+	padding-top: 10px;
+	padding-bottom:10px; 
+  color:var(--mainText);
+	background-color: var(--buttonColor);
+	border-radius: 5px;
+	border:1px solid var(--borderColor);
+	font-size: 14px;
+}
+
+
+.contact-form label{
+	line-height: 2.7em;
+}
+
+.contact-form textarea{
+	min-height: 100px;
+	font-size: 14px;
+}
+
+
+#submit-btn{
+	margin-top: 10px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom:10px; 
+	color: #fff;
+	background-color: var(--buttonColor);
+	border:none;
+}
+
+#submit-btn:hover{
+    background-color: var(--buttonHover);
+    cursor: pointer;
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 3s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: #fff;
+  animation: status 3s ease forwards;
+}
+
+#red-mode{
+    background-color: #502121;
+}
+
+a{
+    text-decoration: none;
+    color: var(--buttonColor);
+}
+
+
+@keyframes status {
+  0% {
+      opacity: 1;
+      pointer-events: all;
+  }
+
+  90% {
+      opacity: 1;
+      pointer-events: all;
+  }
+  
+  100% {
+      opacity: 0;
+      pointer-events: none;
+  }
+}
