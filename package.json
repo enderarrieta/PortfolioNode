@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "dependencies": {
-    "@glidejs/glide": "^3.5.2"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/enderarrieta/PortfolioNode/issues"
   },
-  "homepage": "https://github.com/enderarrieta/PortfolioNode#readme"
+  "homepage": "https://github.com/enderarrieta/PortfolioNode#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2"
+  }
 }
