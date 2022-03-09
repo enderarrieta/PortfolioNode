@@ -107,6 +107,10 @@ grid-template-areas:
     border-radius: 5px 5px 0 0;  
 }
 
+#bunny {
+    margin-left: 300px;
+}
+
 #navigation a{
     color: var(--mainText);
 }
@@ -418,7 +422,7 @@ figure {
   figure:before {
     top: 40%;
     left: 100%;
-    margin-left: 0px;
+    margin-left: 300px;
     width: 50px;
     height: 50px;
     border: 3px solid rgba(255, 255, 255, 0.7);
